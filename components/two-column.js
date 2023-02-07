@@ -1,6 +1,6 @@
 import styles from 'styles/two-column.module.css'
 
-export default function TwoColumn ({ children }) {
+export function TwoColumn ({ children }) {
   return (
     <div className={styles.flexContainer}>
       {children}
@@ -8,7 +8,7 @@ export default function TwoColumn ({ children }) {
   )
 }
 
-TwoColumn.Main = function Main ({ children }) {
+export function TwoColumnMain ({ children }) {
   return (
     <div className={styles.main}>
       {children}
@@ -16,7 +16,7 @@ TwoColumn.Main = function Main ({ children }) {
   )
 }
 
-TwoColumn.Sidebar = function Sidebar ({ children }) {
+export function TwoColumnSidebar ({ children }) {
   return (
     <div className={styles.sidebar}>
       {children}
